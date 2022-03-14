@@ -1,0 +1,425 @@
+/**Start Global**/
+
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: auto;
+    width: 1100px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+
+/**End Global**/
+
+
+/**Start Header**/
+
+.header {
+    height: 650px;
+    background-image: url("../imgs/a27i1955.jpg");
+    background-size: cover;
+    position: relative;
+}
+
+.header .logo {
+    padding-top: 20px;
+}
+
+.header .logo h3 {
+    font-size: 30px;
+    color: darkblue;
+    font-family: Arial, Helvetica, sans-serif;
+    float: left;
+}
+
+.header .logo h3 span {
+    color: darkred;
+}
+
+.header .list {
+    float: right;
+}
+
+.header .list ul li {
+    display: inline-block;
+}
+
+.header .list ul li a:hover {
+    color: crimson;
+}
+
+.header .list ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding-left: 10px;
+}
+
+.header .content {
+    width: 500px;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 10px;
+}
+
+.header .content h3 {
+    font-size: 30px;
+    color: darkblue;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 10px;
+}
+
+.header .content p {
+    padding-bottom: 10px;
+}
+
+.header .content button {
+    color: #f50;
+    border: 5px solid #DDD;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+}
+
+.header .content button:hover {
+    color: blue;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.header .foot {
+    width: 31px;
+    height: 50px;
+    position: absolute;
+    bottom: 30%;
+    left: 49%;
+    border: 2px solid #fff;
+    border-radius: 44%;
+}
+
+.header .foot .anime {
+    margin: auto;
+    height: 5px;
+    width: 4px;
+    background-color: #fff;
+    position: relative;
+    top: 5px;
+    animation: scrolling 3s ease-in-out infinite;
+}
+
+@keyframes scrolling {
+    0% {
+        opacity: 0;
+        top: 20px;
+    }
+    30% {
+        opacity: 1;
+        top: 35%;
+    }
+    100% {
+        opacity: 0;
+        top: 45%;
+    }
+}
+
+
+/**End Header**/
+
+
+/**Start Be First**/
+
+.befirst .container {
+    background-image: url("../imgs/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg");
+    height: 600px;
+    width: 100%;
+    margin-bottom: 18%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.befirst .container .befirst-content {
+    text-align: center;
+    padding-top: 80px;
+}
+
+.befirst .container .befirst-content h2 {
+    color: #fff;
+    font-size: 30px;
+    padding: 20px;
+}
+
+.befirst .container .befirst-content p {
+    color: #DDD;
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 50px;
+}
+
+.befirst .container .befirst-image {
+    text-align: center;
+}
+
+.befirst .container .befirst-image img {
+    width: 400px;
+}
+
+
+/**End Be First**/
+
+
+/** Start Features**/
+
+.feature .feat {
+    width: 30.333%;
+    float: left;
+    margin-left: 2%;
+}
+
+.feature .feat hr {
+    background-color: aqua;
+    height: 5px;
+}
+
+.feature .feat:nth-child(1) hr {
+    background-color: rgb(255, 136, 0);
+    height: 5px;
+}
+
+.feature .feat:nth-child(2) hr {
+    background-color: rgb(82, 10, 248);
+    height: 5px;
+}
+
+.feature .feat h2 {
+    font-size: 15px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.feature .feat p {
+    line-height: 1.5;
+}
+
+
+/** End Features**/
+
+
+/** Start Pricing**/
+
+.pricing {
+    background-color: aqua;
+    height: 600px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pricing .pricing-content {
+    padding-top: 5%;
+}
+
+.pricing .pricing-content h2 {
+    padding-bottom: 10px;
+    color: rgb(228, 13, 13);
+    font-size: 30px;
+}
+
+.pricing .pricing-content p {
+    font-size: 15px;
+    color: #fff;
+}
+
+.pricing .flex {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.pricing .flex .flex-item {
+    width: 25%;
+    margin-right: 5px;
+}
+
+.pricing .flex .flex-item:nth-child(1),
+.pricing .flex .flex-item:nth-child(3) {
+    padding-top: 1.5%;
+}
+
+.pricing .flex .flex-item:nth-child(2):hover {
+    padding-top: 3%;
+}
+
+.pricing .flex .flex-item:nth-child(1):hover,
+.pricing .flex .flex-item:nth-child(3):hover {
+    padding-top: 3%;
+}
+
+.pricing .flex .flex-item ul {
+    list-style: none;
+}
+
+.pricing .flex .flex-item .pers {
+    background-color: black;
+    color: #fff;
+    padding: 15px;
+    font-size: 15px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.pricing .flex .flex-item .dollar {
+    background-color: black;
+    color: #fff;
+    padding: 8px;
+    font-size: 20px;
+}
+
+.pricing .flex .flex-item .dollar small {
+    color: darkgray;
+}
+
+.pricing .flex .flex-item .content {
+    background-color: #fff;
+    font-size: 15px;
+    line-height: 1.3;
+    padding: 5px;
+}
+
+.pricing .flex .flex-item .li-cont {
+    background-color: #fff;
+    padding: 10px;
+    border: 1px dotted #DDD;
+}
+
+.pricing .flex .flex-item .btn {
+    background-color: #DDD;
+    color: brown;
+    padding: 10px;
+}
+
+.pricing .flex .flex-item .btn:hover {
+    color: rgb(21, 214, 86);
+    cursor: pointer;
+}
+
+
+/** End Pricing**/
+
+
+/**Start Invite**/
+
+.invite {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.invite i {
+    color: aqua;
+    border: 2px solid aqua;
+    border-radius: 30px;
+    padding: 15px;
+}
+
+.invite h2 {
+    padding: 20px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.invite p {
+    padding-bottom: 10px;
+}
+
+.invite input {
+    padding: 5px;
+    height: 35px;
+    width: 300px;
+    display: block;
+    margin: auto;
+    outline: 0;
+    border: 0;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.invite button {
+    padding: 5px;
+    border: 1px solid rgb(160, 23, 23);
+    background-color: darkslategray;
+    color: #DDD;
+}
+
+.invite button:hover {
+    color: #f5f5f5;
+    padding: 7px;
+}
+
+
+/**End Invite**/
+
+
+/**Start Information**/
+
+.info {
+    background-color: cornflowerblue;
+    height: 500px;
+}
+
+.info .info-discribtion {
+    width: 70%;
+}
+
+.info .info-discribtion .info-img {
+    width: 30%;
+    float: left;
+}
+
+.info .info-discribtion .info-information {
+    width: 70%;
+    float: left;
+    padding: 20px;
+}
+
+.info .info-discribtion .info-information span {
+    color: #DDD;
+    padding: 10px;
+    font-weight: bold;
+}
+
+
+/**End Information**/
+
+
+/**Start Footer**/
+
+footer {
+    margin-top: 20px;
+    background-color: rgba(169, 169, 169, 0.507);
+}
+
+footer .left {
+    float: left;
+}
+
+footer .right {
+    float: right;
+}
+
+
+/**End Footer**/
